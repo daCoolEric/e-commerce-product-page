@@ -1,0 +1,13 @@
+.slidebuttonnext {
+  /* outline: 2px solid red; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -135px;
+  left: 320px;
+}

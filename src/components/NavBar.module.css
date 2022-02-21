@@ -1,0 +1,45 @@
+.navbar {
+  /* outline: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 67px;
+}
+
+.leftMenu {
+  /* outline: 2px solid red; */
+  width: 171px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rightMenu {
+  /* outline: 2px solid red; */
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cart {
+  display: flex;
+}
+
+.producttracker {
+  width: 19px;
+  height: 13px;
+  background-color: #ff7d1b;
+  border-radius: 6px;
+  font-size: 5px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 26px;
+  top: -5px;
+  visibility: hidden;
+}

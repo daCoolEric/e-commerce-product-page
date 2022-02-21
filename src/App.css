@@ -1,0 +1,10 @@
+/* for mobile view */
+@media screen and (max-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    text-align: center;
+  }
+}
