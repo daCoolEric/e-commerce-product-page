@@ -1,0 +1,52 @@
+.menubarcontainer {
+  /* outline: 2px solid red; */
+  height: 900px;
+  width: 250px;
+  background-color: #fff;
+}
+
+.menucontainer {
+  /* outline: 2px solid red; */
+  height: 310px;
+}
+
+.closebuttoncontainer {
+  /* outline: 2px solid red; */
+  height: 62px;
+  display: flex;
+  align-items: center;
+  width: 227px;
+  margin-left: 23px;
+}
+
+.closebutton {
+  /* outline: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.menu {
+  /* outline: 2px solid red; */
+  height: 248px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.menu > ul > li {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 23px;
+  text-align: left;
+}
+
+.menu > ul > li:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
