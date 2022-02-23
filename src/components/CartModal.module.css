@@ -9,9 +9,10 @@
   z-index: 5;
   background-color: #fff;
   border-radius: 15px;
-  top: 10px;
-  left: 8px;
+  top: -27px;
+  left: 880px;
   visibility: hidden;
+  box-shadow: 3px 3px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
 .carttitle {
@@ -45,10 +46,13 @@
 
 .detailcontainer p {
   text-align: left;
+  margin-top: 10px;
+  line-height: 5px;
 }
 
 .detailcontainer {
   /* outline: 2px solid red; */
+  padding-top: 0px;
   width: 225px;
 }
 
@@ -65,6 +69,8 @@
 .checkout {
   /* outline: 2px solid red; */
   height: 87px;
+  display: flex;
+  justify-content: center;
 }
 
 .checkout button {
@@ -83,4 +89,94 @@
 
 .productimage {
   border-radius: 6px;
+}
+
+@media screen and (max-width: 375px) {
+  .cartmodal {
+    /* outline: 2px solid red; */
+    width: 358px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    border-radius: 15px;
+    top: 10px;
+    left: 8px;
+    visibility: hidden;
+  }
+
+  .carttitle {
+    /* outline: 2px solid red; */
+    width: 329px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    margin-left: 5px;
+  }
+
+  .item {
+    /* outline: 2px solid red; */
+    height: 110px;
+    display: flex;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .itemcontainer {
+    /* outline: 2px solid red; */
+    width: 312px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .detailcontainer p {
+    text-align: left;
+    margin-top: 14px;
+  }
+
+  .detailcontainer {
+    /* outline: 2px solid red; */
+    width: 225px;
+  }
+
+  .deletecontainer {
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
+  }
+
+  .deletecontainer img:hover {
+    cursor: pointer;
+  }
+
+  .checkout {
+    /* outline: 2px solid red; */
+    height: 87px;
+  }
+
+  .checkout button {
+    width: 312px;
+    height: 57px;
+    border-radius: 12px;
+    border-style: none;
+    background-color: #ff7d1b;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .checkout button:hover {
+    cursor: pointer;
+  }
+
+  .productimage {
+    border-radius: 6px;
+  }
 }

@@ -8,14 +8,26 @@ function NavBar() {
     <div className={NavBarCSS.navbar}>
       <div className={NavBarCSS.leftMenu}>
         <img src={MenuIcon} alt="" />
-        <div className={NavBarCSS.shopName}>Peggy's Shop</div>
+        <div className={NavBarCSS.shopName}>PEGGY'S SHOP</div>
+      </div>
+      <div className={NavBarCSS.middleMenu}>
+        <ul>
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </div>
       <div className={NavBarCSS.rightMenu}>
-        <img src={CartIcon} style={{ width: "25px" }} alt="" />
         <div className={NavBarCSS.cart}>
+          <img src={CartIcon} style={{ width: "25px" }} alt="" />
           <div className={NavBarCSS.producttracker}>
             <h1>0</h1>
           </div>
+        </div>
+
+        <div className={NavBarCSS.avatar}>
           <img src={AvatarIcon} style={{ width: "25px" }} alt="" />
         </div>
       </div>
