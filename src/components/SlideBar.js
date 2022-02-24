@@ -1,15 +1,13 @@
 import React from "react";
 import CartModal from "./CartModal";
 import SlideBarCSS from "./SlideBar.module.css";
-import SlideButtonNext from "./SlideButtonNext";
-import SlideButtonPrevious from "./SlideButtonPrevious";
+import SlideButton from "./SlideButton";
 
 function SlideBar() {
   return (
     <div className={SlideBarCSS.slidebar}>
       <CartModal />
-      <SlideButtonNext />
-      <SlideButtonPrevious />
+      <SlideButton />
     </div>
   );
 }

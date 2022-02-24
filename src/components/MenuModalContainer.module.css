@@ -10,7 +10,7 @@
 }
 
 /* Modile view */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
   .menumodalcontainer {
     /* outline: 2px solid red; */
     position: fixed;

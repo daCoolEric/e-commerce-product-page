@@ -1,0 +1,244 @@
+.slidebuttonnext {
+  /* outline: 2px solid red; */
+
+  visibility: none;
+}
+
+@media screen and (max-width: 428px) {
+  .slidebutton {
+    /* outline: 2px solid red; */
+    width: 405px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 5;
+    visibility: visible;
+  }
+
+  .slidebuttonprevious {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slidebuttonnext {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .slidebutton {
+    /* outline: 2px solid red; */
+    width: 390px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 5;
+    visibility: visible;
+  }
+
+  .slidebuttonprevious {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slidebuttonnext {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .slidebutton {
+    /* outline: 2px solid red; */
+    width: 367px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 5;
+    visibility: visible;
+  }
+
+  .slidebuttonprevious {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slidebuttonnext {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slidebutton {
+    /* outline: 2px solid red; */
+    width: 352px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 5;
+    visibility: visible;
+  }
+
+  .slidebuttonprevious {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slidebuttonnext {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .slidebutton {
+    /* outline: 2px solid red; */
+    width: 337px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 5;
+    visibility: visible;
+  }
+
+  .slidebuttonprevious {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slidebuttonnext {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slidebutton {
+    /* outline: 2px solid red; */
+    width: 298px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: none;
+
+    position: relative;
+    top: 0px;
+    left: 10px;
+    z-index: 5;
+    visibility: visible;
+  }
+
+  .slidebuttonprevious {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .slidebuttonnext {
+    /* outline: 2px solid red; */
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}

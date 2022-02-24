@@ -5,7 +5,7 @@
   visibility: hidden;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
   .slidebar {
     /* outline: 2px solid blue; */
     margin-top: 68px;
