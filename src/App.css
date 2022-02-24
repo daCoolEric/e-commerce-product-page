@@ -1,4 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
 /* for mobile view */
+@media screen and (max-width: 428px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    text-align: center;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 414px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    text-align: center;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 390px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    text-align: center;
+    max-width: fit-content;
+  }
+}
 @media screen and (max-width: 375px) {
   * {
     margin: 0;
@@ -6,5 +44,26 @@
   }
   .App {
     text-align: center;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 360px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    text-align: center;
+    max-width: fit-content;
+  }
+}
+@media screen and (max-width: 320px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .App {
+    text-align: center;
+    max-width: fit-content;
   }
 }
