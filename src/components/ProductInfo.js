@@ -56,11 +56,14 @@ function ProductInfo() {
                 <p>50%</p>
               </div>
             </div>
+            <div className={ProductInfoCSS.oldpricecontainer}>
             <div className={ProductInfoCSS.oldprice}>
               <p>$250.00</p>
 
               <hr className={ProductInfoCSS.line} />
             </div>
+            </div>
+            
           </div>
           <div className={ProductInfoCSS.countercontainer}>
             <div className={ProductInfoCSS.productnumber}>

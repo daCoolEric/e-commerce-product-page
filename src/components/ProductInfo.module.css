@@ -82,6 +82,12 @@
   width: 446px;
   height: 75px;
   text-align: left;
+  margin-top: 20px;
+  
+}
+
+.productdescription p {
+  font: 15px;
 }
 .productprice {
   /* outline: 2px solid red; */
@@ -102,6 +108,8 @@
   font-size: 18.5px;
 }
 
+
+
 .oldprice {
   /* outline: 2px solid red; */
   width: 80px;
@@ -116,9 +124,9 @@
 }
 .line {
   position: relative;
-  top: -33px;
+  top: -13px;
   width: 75px;
-  left: -2px;
+  left: 3px;
   border-color: #b8b8c057;
 }
 .discount {
@@ -204,6 +212,224 @@
   justify-content: center;
   margin-right: 10px;
 }
+
+
+
+@media screen and (max-width: 1024px){
+  .productinfo {
+    /* outline: 2px solid green; */
+    width: 1000px;
+    height: 567px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;
+    align-items: center; */
+  }
+  
+  .productdisplay {
+    /* outline: 2px solid red; */
+    width: 556px;
+    height: 565px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    visibility: visible;
+  }
+  
+  .productdisplayinnermain {
+    /* outline: 2px solid blue; */
+    width: 446px;
+    height: 444px;
+  }
+  
+  .productdisplayinnermain img {
+    border-radius: 15px;
+  }
+  
+  .productdisplayinnerviews {
+    /* outline: 2px solid yellow; */
+    width: 446px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 28px;
+  }
+  
+  .productdisplayinnerviews img {
+    border-radius: 15px;
+  }
+  
+  .infosection {
+    /* outline: 2px solid blue; */
+    width: 556px;
+    height: 565px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    visibility: visible;
+  }
+  
+  .infosectioninner {
+    /* outline: 2px solid red; */
+    width: 445px;
+    height: 425px;
+  }
+  
+  .shopname {
+    /* outline: 2px solid red; */
+    width: 326px;
+    text-align: left;
+    font-size: 10px;
+    color: #ff7d1b;
+    margin-top: -6px;
+  }
+  .productname {
+    /* outline: 2px solid red; */
+    width: 326px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .productdescription {
+    /* outline: 2px solid red; */
+    width: 446px;
+    height: 75px;
+    text-align: left;
+  }
+  .productprice {
+    /* outline: 2px solid red; */
+    margin-top: 20px;
+    width: 326px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newprice {
+    /* outline: 2px solid red; */
+    width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18.5px;
+  }
+  
+  
+  
+  .oldprice {
+    /* outline: 2px solid red; */
+    width: 80px;
+    height: 40px;
+  }
+  
+  .oldprice p {
+    margin-top: 5px;
+    color: #b8b8c0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .line {
+    position: relative;
+    top: -13px;
+    width: 75px;
+    left: 2px;
+    border-color: #b8b8c057;
+  }
+  .discount {
+    /* outline: 2px solid red; */
+    width: 50px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #ffefdf;
+    color: #ff7d1b;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .countercontainer {
+    /* outline: 2px solid blue; */
+    width: 446px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .productnumber {
+    /* outline: 2px solid red; */
+    width: 156px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f8fd;
+    border-radius: 12px;
+  }
+  .productcart {
+    /* outline: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 271px;
+    height: 56px;
+    background-color: #ff7d1b;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .productcartinner {
+    /* outline: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 125px;
+  }
+  
+  .discard {
+    /* outline: 2px solid red; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .display {
+    /* outline: 2px solid red; */
+    width: 65px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add {
+    /* outline: 2px solid red; */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+}
+
+
+
+
 
 /* Mobile view */
 @media screen and (max-width: 428px) {
@@ -303,9 +529,9 @@
   }
   .line {
     position: relative;
-    top: -33px;
+    top: -13px;
     width: 75px;
-    left: -5px;
+    left: 2px;
     border-color: #b8b8c057;
   }
   .discount {
@@ -490,9 +716,9 @@
   }
   .line {
     position: relative;
-    top: -33px;
+    top: -13px;
     width: 75px;
-    left: -5px;
+    left: 2px;
     border-color: #b8b8c057;
   }
   .discount {
@@ -677,9 +903,9 @@
   }
   .line {
     position: relative;
-    top: -33px;
+    top: -12px;
     width: 75px;
-    left: -5px;
+    left: 3px;
     border-color: #b8b8c057;
   }
   .discount {
