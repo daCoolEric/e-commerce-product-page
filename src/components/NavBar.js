@@ -1,9 +1,11 @@
 import React from "react";
+import { useAppContext } from "../context/AppContext";
 import NavBarCSS from "./NavBar.module.css";
 import MenuIcon from "../images/icon-menu.svg";
 import CartIcon from "../images/icon-cart.svg";
 import AvatarIcon from "../images/image-avatar.png";
 function NavBar() {
+  const { itemQuantity } = useAppContext();
   return (
     <div className={NavBarCSS.navbarcontainer}>
       <div className={NavBarCSS.navbar}>
@@ -24,7 +26,7 @@ function NavBar() {
           <div className={NavBarCSS.cart}>
             <img src={CartIcon} style={{ width: "25px" }} alt="" />
             <div className={NavBarCSS.producttracker}>
-              <h1>0</h1>
+              <h1>{itemQuantity}</h1>
             </div>
           </div>
 

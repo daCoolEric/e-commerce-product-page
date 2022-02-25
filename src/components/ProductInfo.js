@@ -1,4 +1,5 @@
 import React from "react";
+import { useAppContext } from "../context/AppContext";
 import ProductInfoCSS from "./ProductInfo.module.css";
 import CartIcon from "../images/icon-cart-white.svg";
 import DiscardIcon from "../images/icon-minus.svg";
@@ -10,6 +11,7 @@ import ImageProduct3 from "../images/image-product-3-thumbnail.jpg";
 import ImageProduct4 from "../images/image-product-4-thumbnail.jpg";
 
 function ProductInfo() {
+  const { count, increaseCount, decreaseCount, addToCart } = useAppContext();
   return (
     <div className={ProductInfoCSS.productinfo}>
       <div className={ProductInfoCSS.productdisplay}>
@@ -57,27 +59,26 @@ function ProductInfo() {
               </div>
             </div>
             <div className={ProductInfoCSS.oldpricecontainer}>
-            <div className={ProductInfoCSS.oldprice}>
-              <p>$250.00</p>
+              <div className={ProductInfoCSS.oldprice}>
+                <p>$250.00</p>
 
-              <hr className={ProductInfoCSS.line} />
+                <hr className={ProductInfoCSS.line} />
+              </div>
             </div>
-            </div>
-            
           </div>
           <div className={ProductInfoCSS.countercontainer}>
             <div className={ProductInfoCSS.productnumber}>
-              <div className={ProductInfoCSS.discard}>
+              <div className={ProductInfoCSS.discard} onClick={decreaseCount}>
                 <img src={DiscardIcon} alt="" />
               </div>
               <div className={ProductInfoCSS.display}>
-                <h1>0</h1>
+                <h1>{count}</h1>
               </div>
-              <div className={ProductInfoCSS.add}>
+              <div className={ProductInfoCSS.add} onClick={increaseCount}>
                 <img src={AddIcon} alt="" />
               </div>
             </div>
-            <div className={ProductInfoCSS.productcart}>
+            <div className={ProductInfoCSS.productcart} onClick={addToCart}>
               <div className={ProductInfoCSS.productcartinner}>
                 <img
                   src={CartIcon}
