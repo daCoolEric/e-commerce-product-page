@@ -5,12 +5,19 @@ import MenuIcon from "../images/icon-menu.svg";
 import CartIcon from "../images/icon-cart.svg";
 import AvatarIcon from "../images/image-avatar.png";
 function NavBar() {
-  const { itemQuantity } = useAppContext();
+  const { itemQuantity, openMenu } = useAppContext();
   return (
     <div className={NavBarCSS.navbarcontainer}>
       <div className={NavBarCSS.navbar}>
         <div className={NavBarCSS.leftMenu}>
-          <img src={MenuIcon} alt="" />
+          <img
+            src={MenuIcon}
+            style={{
+              padding: "10px",
+            }}
+            onClick={openMenu}
+            alt=""
+          />
           <div className={NavBarCSS.shopName}>PEGGY'S SHOP</div>
         </div>
         <div className={NavBarCSS.middleMenu}>
