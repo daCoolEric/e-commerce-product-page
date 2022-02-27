@@ -11,8 +11,22 @@ function AppContextProvider(props) {
   const [visibility, setVisibility] = useState("hidden");
   const [cartView, setCartView] = useState("hidden");
   const [emptyCartView, setEmptyCartView] = useState("hidden");
+  const [imageId, setImageId] = useState(0);
 
   //logics
+
+  const nextImage = () => {
+    if (imageId >= 0 && imageId <= 2) {
+      setImageId(() => imageId + 1);
+    }
+  };
+
+  const prevImage = () => {
+    if (imageId <= 3 && imageId >= 1) {
+      setImageId(() => imageId - 1);
+    }
+  };
+
   const increaseCount = () => {
     setCount(() => count + 1);
   };
@@ -60,12 +74,32 @@ function AppContextProvider(props) {
     setItemQuantity(0);
   };
 
+  const firstImage = () => {
+    setImageId(0);
+  };
+  const secondImage = () => {
+    setImageId(1);
+  };
+  const thirdImage = () => {
+    setImageId(2);
+  };
+  const fourthImage = () => {
+    setImageId(3);
+  };
+
   const value = {
     count,
     itemQuantity,
     visibility,
     cartView,
     emptyCartView,
+    imageId,
+    firstImage,
+    secondImage,
+    thirdImage,
+    fourthImage,
+    nextImage,
+    prevImage,
     deleteItems,
     increaseCount,
     decreaseCount,
@@ -74,6 +108,7 @@ function AppContextProvider(props) {
     closeMenu,
     showCart,
   };
+
   return (
     <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
   );

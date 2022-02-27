@@ -4,32 +4,65 @@ import ProductInfoCSS from "./ProductInfo.module.css";
 import CartIcon from "../images/icon-cart-white.svg";
 import DiscardIcon from "../images/icon-minus.svg";
 import AddIcon from "../images/icon-plus.svg";
-import ImageProduct from "../images/image-product-1.jpg";
+import image1 from "../images/image-product-1.jpg";
+import image2 from "../images/image-product-2.jpg";
+import image3 from "../images/image-product-3.jpg";
+import image4 from "../images/image-product-4.jpg";
 import ImageProduct1 from "../images/image-product-1-thumbnail.jpg";
 import ImageProduct2 from "../images/image-product-2-thumbnail.jpg";
 import ImageProduct3 from "../images/image-product-3-thumbnail.jpg";
 import ImageProduct4 from "../images/image-product-4-thumbnail.jpg";
 
 function ProductInfo() {
-  const { count, increaseCount, decreaseCount, addToCart } = useAppContext();
+  const {
+    count,
+    increaseCount,
+    decreaseCount,
+    addToCart,
+    imageId,
+    firstImage,
+    secondImage,
+    thirdImage,
+    fourthImage,
+  } = useAppContext();
+
+  let imageP;
+  switch (imageId) {
+    case 0:
+      imageP = image1;
+      break;
+    case 1:
+      imageP = image2;
+      break;
+    case 2:
+      imageP = image3;
+      break;
+    case 3:
+      imageP = image4;
+      break;
+
+    default:
+      imageP = image1;
+      break;
+  }
   return (
     <div className={ProductInfoCSS.productinfo}>
       <div className={ProductInfoCSS.productdisplay}>
         <div className={ProductInfoCSS.productdisplayinner}>
           <div className={ProductInfoCSS.productdisplayinnermain}>
-            <img src={ImageProduct} style={{ width: "446px" }} alt="" />
+            <img src={imageP} style={{ width: "446px" }} alt="" />
           </div>
           <div className={ProductInfoCSS.productdisplayinnerviews}>
-            <div>
+            <div onClick={() => firstImage()}>
               <img src={ImageProduct1} style={{ width: "90px" }} alt="" />
             </div>
-            <div>
+            <div onClick={() => secondImage()}>
               <img src={ImageProduct2} style={{ width: "90px" }} alt="" />
             </div>
-            <div>
+            <div onClick={() => thirdImage()}>
               <img src={ImageProduct3} style={{ width: "90px" }} alt="" />
             </div>
-            <div>
+            <div onClick={() => fourthImage()}>
               <img src={ImageProduct4} style={{ width: "90px" }} alt="" />
             </div>
           </div>
